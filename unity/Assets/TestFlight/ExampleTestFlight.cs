@@ -7,7 +7,7 @@ public class ExampleTestFlight : MonoBehaviour
     void Awake()
     {
         TestFlight.TakeOff( "253171cb1935bef24ac0d4fcb7928c65_NTk1MTIyMDEyLTA0LTIzIDAwOjU0OjExLjMzMjE4Mw" );
-        TestFlight.Log( "Starting TestFlight exmaple" );
+        TestFlight.Log( "Starting TestFlight example" );
         TestFlight.AddCustomEnvironmentInformation( "Unity Version", Application.unityVersion );
         TestFlight.AddCustomEnvironmentInformation( "System Language", Application.systemLanguage.ToString() );
         TestFlight.PassCheckpoint( "Started TestFlight example." );

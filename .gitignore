@@ -1,14 +1,19 @@
 .DS_Store
+
 iOS/
-xcuserdata
-deps/*TestFlight*
+
+deps/TestFlight.h
+deps/libTestFlight.a
 
 build/
 
 publish
+
 *.ipa
 *.pidb
+
 *.userprefs
+xcuserdata
 
 unity/Library/
 
