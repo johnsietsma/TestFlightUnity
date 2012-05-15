@@ -1,5 +1,7 @@
 #import "TestFlight.h"
 
+#import <UIKit/UIDevice.h>
+
 extern "C" {
     void TF_TakeOff( const char* teamToken ) {
         NSString* teamTokenNSString = [NSString stringWithCString:teamToken encoding:NSUTF8StringEncoding];
@@ -24,6 +26,10 @@ extern "C" {
     void TF_SendFeedback( const char* feedback ) {
         NSString* feedbackNSString = [NSString stringWithCString:feedback encoding:NSUTF8StringEncoding];
         [TestFlight submitFeedback:feedbackNSString];
+    }
+    
+    void TF_SetDeviceID() {
+        [TestFlight setDeviceIdentifier:[[UIDevice currentDevice] uniqueIdentifier]];
     }
     
     void TF_Log( const char* msg ) {

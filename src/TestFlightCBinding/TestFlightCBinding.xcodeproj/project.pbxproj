@@ -11,6 +11,7 @@
 		69D2225C1561CBCD005E92A6 /* TestFlight.h in Headers */ = {isa = PBXBuildFile; fileRef = 69D2225A1561CBCD005E92A6 /* TestFlight.h */; };
 		69D222601561CC0E005E92A6 /* TestFlightCBinding.mm in Sources */ = {isa = PBXBuildFile; fileRef = 69D2225E1561CC0E005E92A6 /* TestFlightCBinding.mm */; };
 		69D222621561E952005E92A6 /* libTestFlightCBinding.a in CopyFiles */ = {isa = PBXBuildFile; fileRef = 69D222481561CB80005E92A6 /* libTestFlightCBinding.a */; };
+		69D22273156207FE005E92A6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69D22272156207FE005E92A6 /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +33,7 @@
 		69D222591561CBCD005E92A6 /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTestFlight.a; path = ../../deps/libTestFlight.a; sourceTree = "<group>"; };
 		69D2225A1561CBCD005E92A6 /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestFlight.h; path = ../../deps/TestFlight.h; sourceTree = "<group>"; };
 		69D2225E1561CC0E005E92A6 /* TestFlightCBinding.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TestFlightCBinding.mm; sourceTree = "<group>"; };
+		69D22272156207FE005E92A6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69D22273156207FE005E92A6 /* UIKit.framework in Frameworks */,
 				69D2225B1561CBCD005E92A6 /* libTestFlight.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -67,6 +70,7 @@
 		69D2224A1561CB80005E92A6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				69D22272156207FE005E92A6 /* UIKit.framework */,
 				69D2224B1561CB80005E92A6 /* Foundation.framework */,
 			);
 			name = Frameworks;

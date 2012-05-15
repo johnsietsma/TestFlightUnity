@@ -163,7 +163,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1578684505}
   - 114: {fileID: 1578684506}
-  - 114: {fileID: 1578684507}
   m_Layer: 0
   m_Name: ExampleTestFlight
   m_TagString: Untagged
@@ -193,13 +192,4 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 744a4ca2295004db9bf346e8aa5cd249, type: 1}
   m_Name: 
---- !u!114 &1578684507
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1578684504}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 744a4ca2295004db9bf346e8aa5cd249, type: 1}
-  m_Name: 
+  token: 253171cb1935bef24ac0d4fcb7928c65_NTk1MTIyMDEyLTA0LTIzIDAwOjU0OjExLjMzMjE4Mw

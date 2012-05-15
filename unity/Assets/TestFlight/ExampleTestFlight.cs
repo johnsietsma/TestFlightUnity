@@ -4,10 +4,18 @@ using UnityEngine;
 
 public class ExampleTestFlight : MonoBehaviour
 {
+    public string token;
+
     void Awake()
     {
-        TestFlight.TakeOff( "253171cb1935bef24ac0d4fcb7928c65_NTk1MTIyMDEyLTA0LTIzIDAwOjU0OjExLjMzMjE4Mw" );
+        if( string.IsNullOrEmpty( token ) ) {
+            Debug.LogError( "Please set your TestFlight SDK token in the editor." );
+        }
+        TestFlight.TakeOff( token );
         TestFlight.Log( "Starting TestFlight example" );
+        if( Debug.isDebugBuild ) {
+            TestFlight.SetDeviceID();
+        }
         TestFlight.AddCustomEnvironmentInformation( "Unity Version", Application.unityVersion );
         TestFlight.AddCustomEnvironmentInformation( "System Language", Application.systemLanguage.ToString() );
         TestFlight.PassCheckpoint( "Started TestFlight example." );
