@@ -1,0 +1,14 @@
+.DS_Store
+iOS/
+xcuserdata
+deps/*TestFlight*
+
+build/
+
+publish
+*.ipa
+*.pidb
+*.userprefs
+
+unity/Library/
+
