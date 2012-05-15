@@ -79,6 +79,7 @@ public static class TestFlight
     {
         if( Application.platform != RuntimePlatform.IPhonePlayer )
             return;
+            
         TF_Crash();
     }
 }

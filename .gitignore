@@ -11,6 +11,7 @@ publish
 
 *.ipa
 *.pidb
+bin/
 
 *.userprefs
 xcuserdata
