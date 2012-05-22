@@ -47,8 +47,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="NLog">
-      <HintPath>..\..\unity\Assets\Plugins\NLog.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\deps\NLog.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
