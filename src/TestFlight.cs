@@ -4,6 +4,10 @@ using UnityEngine;
 
 namespace TestFlightUnity
 {
+    /// <summary>
+    /// The p/invoke wrapper around the C binding of the TestFlight SDK.
+    // <see href="https://testflightapp.com/sdk/doc/1.2/">
+    /// </summary>
 public static class TestFlight
 {
     [DllImport ("__Internal")]

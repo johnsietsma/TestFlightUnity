@@ -24,15 +24,31 @@ public class ExampleTestFlight : MonoBehaviour
 
     void OnGUI()
     {
-        if( GUI.Button( new Rect( 20, 20, 200, 100 ), "Crash" ) ) {
+        if( GUI.Button( new Rect( 20, 20, 200, 80 ), "Crash" ) ) {
             TestFlight.Log( "Crashing..." );
             TestFlight.PassCheckpoint( "About to crash" );
             TestFlight.Crash();
         }
 
-        if( GUI.Button( new Rect( 20, 220, 200, 100 ), "Leave Feedback" ) ) {
+        if( GUI.Button( new Rect( 20, 120, 200, 80 ), "Leave Feedback" ) ) {
             TestFlight.Log( "Leaving feedback" );
             TestFlight.OpenFeedbackView();
+        }
+
+        // Setup questions on the TestFlight websiight to match these checkpoints.
+        if( GUI.Button( new Rect( 20, 220, 200, 80 ), "Q1" ) ) {
+            TestFlight.Log( "Checkpoint Q1" );
+            TestFlight.PassCheckpoint( "Q1" );
+        }
+
+        if( GUI.Button( new Rect( 20, 320, 200, 80 ), "Q2" ) ) {
+            TestFlight.Log( "Checkpoint Q2" );
+            TestFlight.PassCheckpoint( "Q2" );
+        }
+
+        if( GUI.Button( new Rect( 20, 420, 200, 80 ), "Q3" ) ) {
+            TestFlight.Log( "Checkpoint Q3" );
+            TestFlight.PassCheckpoint( "Q3" );
         }
     }
 }

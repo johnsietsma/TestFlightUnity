@@ -1,0 +1,21 @@
+{
+	"folders":
+	[
+		{
+        "file_include_patterns":
+             [
+                "*.mm",
+                "*.h",
+                "*.cs",
+                "*.js",
+                "*.txt",
+                "*.shader",
+                "*.cginc",
+                "*.xml",
+                "*.unity",
+                "*.md"
+             ],
+			"path": "./"
+		}
+	]
+}

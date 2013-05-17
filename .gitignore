@@ -16,6 +16,9 @@ bin/
 *.userprefs
 xcuserdata
 
+unity/*.csproj
+unity/*.sln
 unity/Library/
 unity/Temp/
 
+*.sublime-workspace
