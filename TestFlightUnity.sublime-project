@@ -1,21 +1,16 @@
 {
-	"folders":
-	[
-		{
-        "file_include_patterns":
-             [
-                "*.mm",
-                "*.h",
-                "*.cs",
-                "*.js",
-                "*.txt",
-                "*.shader",
-                "*.cginc",
-                "*.xml",
-                "*.unity",
-                "*.md"
-             ],
-			"path": "./"
-		}
-	]
+   "folders":
+   [
+      {
+         "file_exclude_patterns":
+         [
+            "*.meta",
+            "*.csproj",
+            "*.sln",
+            "*.pidb",
+            "*.userprefs"
+         ],
+         "path": "./"
+      }
+   ],
 }
