@@ -12,10 +12,15 @@ public class ExampleTestFlight : MonoBehaviour
             Debug.LogError( "Please set your TestFlight SDK token in the editor." );
         }
         if( Debug.isDebugBuild ) {
+            // Must be called before TakeOff.
             TestFlight.SetDeviceID();
         }
+
+        // Set some information for the session
         TestFlight.AddCustomEnvironmentInformation( "Unity Version", Application.unityVersion );
         TestFlight.AddCustomEnvironmentInformation( "System Language", Application.systemLanguage.ToString() );
+
+        // Start the session
         TestFlight.TakeOff( token );
         TestFlight.Log( "Starting TestFlight example" );
         TestFlight.PassCheckpoint( "Started TestFlight example." );

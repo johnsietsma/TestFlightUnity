@@ -8,7 +8,8 @@
             "*.csproj",
             "*.sln",
             "*.pidb",
-            "*.userprefs"
+            "*.userprefs",
+            "*.png"
          ],
          "path": "./"
       }
