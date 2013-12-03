@@ -1,9 +1,9 @@
 .DS_Store
 
-iOS/
+/unity/iOS/
 
-deps/TestFlight.h
-deps/libTestFlight.a
+TestFlight.h*
+libTestFlight.a*
 
 build/
 
