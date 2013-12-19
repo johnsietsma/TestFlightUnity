@@ -34,6 +34,9 @@ public static class TestFlight
     [DllImport ( "__Internal" )]
     private static extern void TF_Crash();
 
+#if UNITY_ANDROID
+        private static AndroidJavaClass tf = null;
+#endif
 
     public static void TakeOff( string token )
     {
