@@ -4,6 +4,8 @@ A Unity Plugin for the [TestFlight SDK](https://testflightapp.com/sdk/).
 
 Thanks to Mike Munson for adding Android support.
 
+_NOTE: THe Android code is crashing right now. If you have an Android device and can fix this, please let me know._
+
 # Features
 This plugin supports on iOS:
 * Session registration.
