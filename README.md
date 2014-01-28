@@ -39,6 +39,21 @@ To use the plugin in your Unity project:
  1. Add calls to the TestFlight class in your project. Use unity/Assets/TestFlight/ExampleTestFlight.cs as a guide.
  2. Run, test and publish your app to TestFlight.
 
+
+# Andriod Notes
+
+* You MUST include the proper permissions in the AndroidManifest next to the application entry: 
+.... 
+</application> 
+<uses-permission android:name="android.permission.INTERNET"/> 
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/> 
+</manifest> 
+
+* You SHOULD extract the tf.properties from the Testflight-Library (starting on the "res"-level) and put it as a copy next to the library (otherwise Testflight will not notice that an SDK is included) 
+ 
+
+Thanks to @habitoti for these notes
+
 # Further Resources
 Check the TestFlight SDK at https://testflightapp.com/sdk/doc/.
 
