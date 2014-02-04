@@ -4,10 +4,20 @@ using UnityEngine;
 
 public class ExampleTestFlight : MonoBehaviour
 {
-    public string token;
+	public string iOSToken;
+	public string androidToken;
+	string token;
 
     void Awake()
     {
+		#if UNITY_IPHONE
+		token = iOSToken;
+		#elif UNITY_ANDROID
+		token = androidToken;
+		#else
+		token = "placeholder";
+		#endif
+
         if( string.IsNullOrEmpty( token ) ) {
             Debug.LogError( "Please set your TestFlight SDK token in the editor." );
         }
