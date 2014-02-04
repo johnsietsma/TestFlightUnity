@@ -4,6 +4,9 @@ A Unity Plugin for the [TestFlight SDK](https://testflightapp.com/sdk/).
 
 Thanks to Mike Munson for adding Android support.
 
+Thanks to @elaberge for fixing warnings, adding separate Android token support and extra error checking.
+
+
 # Features
 This plugin supports on iOS:
 * Session registration.
@@ -51,8 +54,13 @@ To use the plugin in your Unity project:
 
 * You SHOULD extract the tf.properties from the Testflight-Library (starting on the "res"-level) and put it as a copy next to the library (otherwise Testflight will not notice that an SDK is included) 
  
+Thanks to @habitoti for these notes.
 
-Thanks to @habitoti for these notes
+
+* Doesn't work in the TestFlight API v1.2 because takeOff() isn't called within onCreate(). Works in TestFlight API v1.3.
+
+Thanks to Thomas Olsen for testing and figuring this out.
+
 
 # Further Resources
 Check the TestFlight SDK at https://testflightapp.com/sdk/doc/.
