@@ -57,7 +57,7 @@ To use the plugin in your Unity project:
 Thanks to @habitoti for these notes.
 
 
-* Doesn't work in the TestFlight API v1.2 because takeOff() isn't called within onCreate(). Works in TestFlight API v1.3.
+* Doesn't work in the TestFlight API v1.2 because takeOff() isn't called within onCreate(). Tested in TestFlight API v1.3 and v1.4.
 
 Thanks to Thomas Olsen for testing and figuring this out.
 
