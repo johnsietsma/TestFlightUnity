@@ -1,3 +1,8 @@
+# TestFlight has been bought by Apple. This plugin should not be used!
+
+
+
+
 # TestFlightUnity
 
 A Unity Plugin for the [TestFlight SDK](https://testflightapp.com/sdk/).
